@@ -1,0 +1,38 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.io.StringReader;
+
+public class FiguryReader {
+	private String linia = "";
+	public FiguryReader(Reader str_znakow) throws IOException {
+		BufferedReader br = new BufferedReader(str_znakow);
+		String lin;
+		while ((lin = br.readLine()) != null) {
+			linia += lin;
+			linia += "\n";
+		}
+	}
+
+	public void nastepnaFigura() throws IOException {
+		BufferedReader reader = new BufferedReader(new StringReader(linia));
+		String[] linieee = linia.split("\t");
+		System.out.println(linieee);
+	}
+
+	public static String odczytajPierwszaLinieZPlikuTryWith()
+			throws FileNotFoundException, IOException {
+		try (BufferedReader br = new BufferedReader(new FileReader("plik.txt"))) {
+			return br.readLine();
+		}
+	}
+
+	@Override
+	public String toString() {
+		return this.linia;
+	}
+
+
+}

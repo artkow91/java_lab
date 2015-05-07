@@ -1,0 +1,14 @@
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class RUN {
+
+	public static void main(String[] args) throws IOException {
+		FileReader fr = new FileReader( "plik.txt" );
+        int i = fr.read();
+        fr.close();
+
+	}
+
+}

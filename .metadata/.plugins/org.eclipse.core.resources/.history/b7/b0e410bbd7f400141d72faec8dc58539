@@ -1,0 +1,9 @@
+
+public class FiguraGeometryczna {
+
+	public void dajFigure(String string) {
+		
+		
+	}
+
+}

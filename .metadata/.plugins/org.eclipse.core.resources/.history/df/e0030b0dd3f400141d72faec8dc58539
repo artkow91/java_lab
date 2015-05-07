@@ -1,0 +1,22 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.Reader;
+
+public class FiguryReader {
+	private String linia = "";
+
+	public FiguryReader(Reader str_znakow) throws IOException {
+		BufferedReader br = new BufferedReader(str_znakow);
+		String lin;
+		while ((lin = br.readLine()) != null) {
+			linia += lin;
+			linia += "\n";
+		}
+		br.close();
+	}
+
+	@Override
+	public String toString() {
+		return this.linia;
+	}
+}

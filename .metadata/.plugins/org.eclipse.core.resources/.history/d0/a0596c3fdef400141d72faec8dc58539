@@ -1,0 +1,15 @@
+public class FiguraGeometryczna {
+
+	private double[] parametr;
+	private String opis_figury;
+
+	public void dajFigure(String string) {
+
+	}
+
+	public void ustawParametry(double[] param, String opis) {
+		opis_figury = opis;
+		parametr = param;
+	}
+
+}
