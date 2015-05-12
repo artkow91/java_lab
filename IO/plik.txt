@@ -1,3 +1,0 @@
-KWADRAT	nieduży kwadrat	0.1
-TRÓJKĄT	tr.prostokątny	3,5
-KOŁO	wielkie koło	999.999

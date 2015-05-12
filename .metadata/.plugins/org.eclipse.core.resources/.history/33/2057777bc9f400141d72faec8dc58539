@@ -1,7 +1,0 @@
-
-public class Uruchom {
-	FiguryReader figura = new FiguryReader();
-	
-	
-	
-}
