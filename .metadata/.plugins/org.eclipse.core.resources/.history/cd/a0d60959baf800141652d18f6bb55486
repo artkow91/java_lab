@@ -4,6 +4,7 @@ abstract class FiguraGeometryczna {
 
 	abstract String dajTyp();
 	abstract double dajPole();
+//	int[] dajIloscParamterow();
 
 	int[] dajIloscParametrow(){
 		int[] i = {1};

@@ -4,17 +4,21 @@ abstract class FiguraGeometryczna {
 
 	abstract String dajTyp();
 	abstract double dajPole();
+//	int[] dajIloscParamterow();
 
+	abstract String dajTyp() {
+
+	}
+	abstract double dajPole(){
+		
+	}
 	int[] dajIloscParametrow(){
-		int[] i = {1};
-		return i;
+		return int[] i = {1};
 	}
 
 	public void ustawParametry(double[] param, String opis) {
 		typ_figury = opis;
-		if ((param.length)==this.dajIloscParametrow()[0]){
-			
-		}
+		
 	}
 
 }
